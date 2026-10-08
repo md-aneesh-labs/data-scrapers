@@ -1,0 +1,10 @@
+{
+  "crawlers": [
+    {
+      "name": "quotes",
+      "enabled": true,
+      "output": "output/quotes.jsonl",
+      "args": {}
+    }
+  ]
+}
