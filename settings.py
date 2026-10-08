@@ -20,4 +20,9 @@ DEFAULT_REQUEST_HEADERS = {
 }
 
 FEED_EXPORT_ENCODING = "utf-8"
-LOG_LEVEL = "INFO"
+LOG_LEVEL = "INFO"  # INFO or DEBUG for full Scrapy logs
+
+# Each crawler writes to output/<crawler name>.jsonl
+FEEDS = {
+    "output/%(name)s_%(time)s.json": {"format": "json", "overwrite": True},
+}
